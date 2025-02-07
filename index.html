@@ -5,85 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temi's Tutoring</title>
-    <!--Link my css-->
-    <link rel="stylesheet" href="assets/css/style.css">
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <!--Custom CSS-->
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
+    <!--Main Header Text-->
     <header>
-        <h1>Temi's Tutoring</h1>
-        <div>
-            <h3>
-                Trusted tutors,
-                <small class="text-muted">proven results</small>
-            </h3>
+        <div class="container">
+            <div class="row">
+                <h1>Temi's Tutoring</h1>
+            </div>
+            <div class="row">
+                <h3>
+                    Trusted tutors,
+                    <small class="text-muted">proven results</small>
+                </h3>
+            </div>
+            <div class="row">
+                <p class="lead">
+                    We provide tutoring services across England, one student at a time. Our tutors are experienced and
+                    have
+                    a proven track record of helping students succeed.
+                </p>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" href="#">Subject</a>
+                      <a class="nav-link" href="#">Sessions</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            <hr>
         </div>
-        <div>
-            <p class="lead">
-                We provide tutoring services across England, one student at a time. Our tutors are experienced and have
-                a proven track record of helping students succeed.
-            </p>
-            <a href="#">Subjects</a> <a href="#">Sessions</a>
-        </div>
-    <hr>
     </header>
     <!--Main content-->
-    <main class="text-center">
-        <h2>Subjects</h2>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Mathematics</h5>
-                        <!--Checklist for subject grade level-->
-                        <div class="list-group">
-                            <label class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="">
-                                Entry Level
-                            </label>
-                            <label class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="">
-                                GCSE Level
-                            </label>
-                            <label class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="">
-                                Core maths skills for 4-16 year olds
-                            </label>
+    <main>
+        <div class="container">
+            <div class="row">
+                <h2>Subjects</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Mathematics</h5>
+                            <!--Checklist for subject grade level-->
+                            <div class="list-group">
+                                <label class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="">
+                                    Entry Level
+                                </label>
+                                <label class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="">
+                                    GCSE Level
+                                </label>
+                                <label class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="">
+                                    Core maths skills for 4-16 year olds
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">English</h5>
-                        <!--Checklist for subject grade level-->
-                        <div class="list-group">
-                            <label class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="">
-                                Entry Level
-                            </label>
-                            <label class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="">
-                                GCSE Level
-                            </label>
-                            <label class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="">
-                                Core English skills for 4-16 year olds
-                            </label>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">English</h5>
+                            <!--Checklist for subject grade level-->
+                            <div class="list-group">
+                                <label class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="">
+                                    Entry Level
+                                </label>
+                                <label class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="">
+                                    GCSE Level
+                                </label>
+                                <label class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="">
+                                    Core English skills for 4-16 year olds
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <main class="text-center">Sessions</main>
     </main>
-    <main class="text-center">Sessions</main>
     <!--Footer-->
     <footer></footer>
 </body>
