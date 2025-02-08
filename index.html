@@ -12,7 +12,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <!--Custom CSS-->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
     <!--Main content contains all the sections on the page-->
     <main>
         <!--Page overview-->
-        <section class="container">
+        <section class="container" id="overview">
             <div class="row">
                 <h3>
                     Trusted tutors,
@@ -58,7 +58,7 @@
         </nav>
         <hr>
         <!--Subject Section-->
-        <section class="container">
+        <section class="container" id="subjects">
             <div class="row">
                 <h2>Subjects</h2>
             </div>
@@ -113,7 +113,7 @@
         </section>
         <hr>
         <!--Sessions Section-->
-        <section class="container">
+        <section class="container" id="sessions">
             <div class="row">
                 <h2>Sessions</h2>
             </div>
@@ -123,8 +123,9 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Weekday Sessions</h5>
-                            <p class="card-text">These sessions run from Monday to Friday and are scheduled outside
-                                typical school hours</p>
+                            <p class="card-text">These sessions run from Monday to Friday consist of hourly sessions and
+                                are scheduled outside
+                                typical school hours. </p>
                             <div class="list-group">
                                 <label class="list-group-item">
                                     <input class="form-check-input me-1" type="checkbox" value="">
@@ -151,27 +152,26 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Weekend Sessions</h5>
-                            <p class="card-text">The weekend sessions on saturday consist of two hour block sessions to
-                                maximize more one on one time with students and determione where their challenges lie.
-                            </p>
-                        </div>
-                        <div class="list-group">
-                            <label class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="">
-                                9:30 - 11:30
-                            </label>
-                            <label class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="">
-                                12:00 - 14:00
-                            </label>
-                            <label class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="">
-                                14:30 - 16:30
-                            </label>
-                            <label class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="">
-                                17:00 - 19:00
-                            </label>
+                            <p class="card-text">These sessions on saturday consist of two hour blocks to encourage more
+                                one on one time with students.</p>
+                            <div class="list-group">
+                                <label class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="">
+                                    9:30 - 11:30
+                                </label>
+                                <label class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="">
+                                    12:00 - 14:00
+                                </label>
+                                <label class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="">
+                                    14:30 - 16:30
+                                </label>
+                                <label class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="">
+                                    17:00 - 19:00
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -179,7 +179,18 @@
         </section>
     </main>
     <!--Footer-->
-    <footer></footer>
+    <footer>
+		<span>Find us on:</span>
+
+		<a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
+		<a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
+		<a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)">Twitter</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="Find us on LinkedIn (link opens in a new tab)">LinkedIn</a>
+
+        <div class="row">
+            <p>&copy; 2021 Temi's Tutoring</p>
+        </div>
+    </footer>
 </body>
 
 </html>
