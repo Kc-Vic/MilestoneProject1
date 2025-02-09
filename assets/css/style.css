@@ -1,11 +1,15 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*General Styles*/
 body {
-    font-family: sans-serif;
+    font-family: "lato", sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+/*All targeted styles*/
 header {
     background-color: #145d99;
     color: #fff;
