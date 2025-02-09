@@ -9,7 +9,7 @@ body {
     flex-direction: column;
 }
 
-/*All targeted styles*/
+/*Heading styles*/
 header {
     background-color: #145d99;
     color: #fff;
@@ -17,12 +17,31 @@ header {
     text-align: center;
 }
 
+header > h1 {
+    font-size: 2em;
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+h5 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 1em;
+    margin: 0;
+}
+
+/*main section styles*/
 main {
     background-color: aqua;
     flex: 1 0 auto; 
 }
 
-
+/*footer styles*/
 footer {
     background-color: #69a332;
     color: #fff;
