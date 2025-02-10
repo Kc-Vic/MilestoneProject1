@@ -2,29 +2,39 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*General Styles*/
-body {
-    font-family: "lato", sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 1200px) {
+    body {
+        font-family: "lato", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        max-width: 1800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
 
 /*Child Image*/
 #child {
-    height: 400px;
+    /*height: 800px;*/
     width: 100%;
     background: url(../images/learningchild.jpg) no-repeat center center/cover;
-    margin-top: relative;
+    position: relative;
+    aspect-ratio: 3;
+    min-height: 360px;
+    background-position-y: 10%;
+    margin-bottom: 10px;
 }
 
 /*Heading styles*/
 header {
-    background-color: #145d99;
+    background-color: blue;
     color: #fff;
     padding: 10px 0;
     text-align: center;
     box-shadow: 0px 2px 2px #3a3a3a;
-    margin: 0 0 2px;
+    margin: 0 0 1px;
 }
 
 header > h1 {
@@ -39,7 +49,14 @@ h2 {
     margin: 0;
 }
 
-h5 {
+h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+h4 {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 1em;
     margin: 0;
@@ -51,20 +68,36 @@ nav {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 110%;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 /*main section styles*/
 main {
-    background-color: aqua;
+    background-color: white;
     flex: 1 0 auto; 
+    position: relative;
+    margin-top: 2px;
+}
+
+/*section styles*/
+#subjects {
+    margin-top: 20px;
+}
+
+#sessions {
+    margin-top: 20px;
 }
 
 /*footer styles*/
 footer {
-    background-color: #69a332;
+    background-color: blue;
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    margin-top: 80px;
+    padding-top: 30px;
+    height: 120px;
 }
 
 footer > span {
@@ -75,4 +108,10 @@ footer > span {
 footer > a {
     color: #fff;
     padding: 0 15px;
+    padding-bottom: 20px;
+}
+
+footer > p {
+    font-size: 0.8em;
+    margin-top: 20px;
 }
