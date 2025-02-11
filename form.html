@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <h1 class="text-center">Temi's Tutoring</h1>
+        </div>
+    </header>
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="#subjects">Subject</a>
+                    <a class="nav-link" href="#sessions">Sessions</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Form Section-->
+    <section id="signup" method="post" action="https://formdump.codeinstitute.net">
+        <form>
+            <!--Guardian Detail-->
+            <fieldset>
+                <legend>Parent/Guardian details</legend>
+                <div class="mb-3">
+                    <label for="exampleInputname" class="form-label">Full Name*</label>
+                    <input type="text" class="form-control" id="exampleInputname" placeholder="Your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address*</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputphone" class="form-label">Phone*</label>
+                    <input type="tel" class="form-control" id="exampleInputphone" placeholder="Your phone number"
+                        required>
+                </div>
+            </fieldset>
+            <!--Student Detail-->
+            <fieldset>
+                <legend>Student details</legend>
+                <div class="mb-3">
+                    <label for="exampleInputname" class="form-label">Ward Name*</label>
+                    <input type="text" class="form-control" id="exampleInputname" placeholder="Your ward's name"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputage" class="form-label">Age*</label>
+                    <select class="form-select" id="exampleInputage" required>
+                        <option selected>Select age</option>
+                        <option value="1">5-7</option>
+                        <option value="2">7-11</option>
+                        <option value="3">11-14</option>
+                        <option value="4">14-16</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputclass" class="form-label">Key Stage</label>
+                    <select class="form-select" id="exampleInputclass">
+                        <option selected>Select Key Stage</option>
+                        <option value="1">KS1</option>
+                        <option value="2">KS2</option>
+                        <option value="3">KS3</option>
+                        <option value="4">KS4</option>
+                    </select>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
