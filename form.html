@@ -31,18 +31,17 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link" href="#subjects">Subject</a>
-                    <a class="nav-link" href="#sessions">Sessions</a>
                 </div>
             </div>
         </div>
     </nav>
     <!--Form Section-->
-    <section id="signup" method="post" action="https://formdump.codeinstitute.net">
+    <section id="register" method="post" action="https://formdump.codeinstitute.net">
         <form>
             <!--Guardian Detail-->
-            <fieldset>
+            <fieldset class=" container-fluid bg-light" id="guardian">
                 <legend>Parent/Guardian details</legend>
+                <hr>
                 <div class="mb-3">
                     <label for="exampleInputname" class="form-label">Full Name*</label>
                     <input type="text" class="form-control" id="exampleInputname" placeholder="Your name" required>
@@ -59,8 +58,9 @@
                 </div>
             </fieldset>
             <!--Student Detail-->
-            <fieldset>
+            <fieldset class=" container-fluid bg-light" id="student">
                 <legend>Student details</legend>
+                <hr>
                 <div class="mb-3">
                     <label for="exampleInputname" class="form-label">Ward Name*</label>
                     <input type="text" class="form-control" id="exampleInputname" placeholder="Your ward's name"
@@ -87,9 +87,22 @@
                     </select>
                 </div>
             </fieldset>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" value="register">Submit</button>
         </form>
     </section>
+    <!--Footer Section-->
+    <footer>
+		<span>Find us on:</span>
+
+		<a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
+		<a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
+		<a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)">Twitter</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="Find us on LinkedIn (link opens in a new tab)">LinkedIn</a>
+
+        <div class="row">
+            <p style="margin-top: 20px;">&copy; 2025 Temi's Tutoring</p>
+        </div>
+    </footer>
 </body>
 
 </html>
