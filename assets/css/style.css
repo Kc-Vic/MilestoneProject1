@@ -83,10 +83,13 @@ nav {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 110%;
-    margin-bottom: 5px;
-    margin-top: 50px;
+    /*margin-bottom: 5px;*/
+    margin: 0, 10px 5px;
 }
 
+#navbar {
+    margin-left: auto;
+}
 /*main section styles*/
 main {
     background-color: white;
