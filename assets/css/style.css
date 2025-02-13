@@ -94,12 +94,13 @@ main {
 #sessions {
     margin-top: 80px;
     padding: 20px 100px;
-}
-
-#subject-cards,
-#session-cards {
     margin-bottom: 50px;
 }
+
+/*#subject-cards,
+#session-cards {
+    margin-bottom: 50px;
+}*/
 
 #sessions {
     margin-top: 80px;
