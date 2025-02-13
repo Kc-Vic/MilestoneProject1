@@ -2,31 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*General Styles*/
-@media screen and (min-width: 768px) {
+body {
+    font-family: "lato", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 1800px;
+    font-weight: 400;
+    line-height: 200%;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 820px) {
     body {
-        font-family: "lato", sans-serif;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        max-width: 1800px;
-        font-weight: 400;
-        line-height: 200%;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
-}
-@media screen and (max-width: 1800px) {
-    body {
-        font-family: "lato", sans-serif;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        max-width: 1800px;
-        font-weight: 400;
-        line-height: 200%;
-        font-size: 1rem;
-    }
-    
 }
 
 /*Child Image*/
@@ -83,13 +74,13 @@ nav {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 110%;
-    /*margin-bottom: 5px;*/
     margin: 0, 10px 5px;
 }
 
 #navbar {
     margin-left: auto;
 }
+
 /*main section styles*/
 main {
     background-color: white;
@@ -99,20 +90,13 @@ main {
 }
 
 /*section styles*/
-#subjects {
-    margin-top: 80px;
-    padding: 20px 100px;
-}
-
+#subjects,
 #sessions {
     margin-top: 80px;
     padding: 20px 100px;
 }
 
-#subject-cards {
-    margin-bottom: 50px;
-}
-
+#subject-cards,
 #session-cards {
     margin-bottom: 50px;
 }
@@ -125,30 +109,61 @@ main {
     flex-flow: row wrap;
 }
 
+@media only screen and (max-width: 900px) {
+    #subjects,
+    #sessions {
+        padding: 0px 20px;
+    }
+
+    #subject-cards {
+        padding: 10px 0;
+    }
+    
+}
+
+/*Form styles*/
 #signup {
     margin-top: 30px;
     text-align: center;
     color: #284a5a;
 }
 
-/*form styles*/
+form {
+    margin-top: 30px;
+}
+
+
 /* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     form {
-        margin-top: 30px;
-        padding: 20px 200px;
+        padding: 20px 0px;
+    }
+
+    option {
+        font-size: 0.8rem;
+    }
+
+    fieldset {
+        padding: 20px 50px;
     }
 }
 
-fieldset {
-    margin-bottom: 50px;
+form > #submit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#guardian,
+#student {
+    padding: 20px 100px;
+    margin-top: 20px;
 }
 
 fieldset>div {
     padding: 20px 20px;
 }
 
-form > button {
+form>button {
     align-items: center;
 }
 
