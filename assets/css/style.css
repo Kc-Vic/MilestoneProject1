@@ -134,7 +134,7 @@ form {
 
 
 /* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
     form {
         padding: 20px 0px;
     }
@@ -165,6 +165,18 @@ fieldset>div {
 
 form>button {
     align-items: center;
+}
+
+input:invalid + .error-message {
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Hide error message initially */
+.error-message {
+    display: none;
 }
 
 /*footer styles*/

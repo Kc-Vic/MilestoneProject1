@@ -48,7 +48,9 @@
                 <div class="mb-3">
                     <label for="email" class="form-label">Email address*</label>
                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email"
-                        placeholder="Your email address" required>
+                        placeholder="Your email address" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                        title="Please enter a valid email address (e.g., example@domain.com)">
+                        <span class="error-message">Invalid email format</span>
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
