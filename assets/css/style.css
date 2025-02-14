@@ -135,7 +135,7 @@ form {
 }
 
 
-/* Media query: tablets and larger (768px and up) */
+/* Media query: iphones and smaller screens */
 @media screen and (max-width: 600px) {
     form {
         padding: 20px 0px;
