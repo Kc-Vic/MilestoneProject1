@@ -1,5 +1,7 @@
 # Temi's Turoring
 
+[View deployed site here](https://kc-vic.github.io/MilestoneProject1/)
+
 Temi's Tutoring is a responsive website designed to provide information about private tutoring services for children aged 5-16. The site offers details about available subjects, session times, and includes a registration form for new students.
 
 ## Business Goal
