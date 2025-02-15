@@ -1,131 +1,224 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Temi's Turoring
 
-Welcome USER_NAME,
+Temi's Tutoring is a responsive website designed to provide information about private tutoring services for children aged 5-16. The site offers details about available subjects, session times, and includes a registration form for new students.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Business Goal
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+The primary goal of Temi's Tutoring website is to establish a strong online presence that effectively connects qualified tutors with students aged 5-16 who need academic support in Mathematics and English.
 
-## Gitpod Reminders
+# UX
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## The ideal client for this business is:
 
-`python3 -m http.server`
+- English speaking.
+- Is a parent or guardian to a child aged 5-16.
+- Has access to fast internet broadband services.
+- Lives in the UK.
 
-A blue button should appear to click: _Make Public_,
+## Visitors to this website are searching for:
 
-Another blue button should appear to click: _Open Browser_.
+- A tutor to provide online personalized education services for their child or ward.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+## This project is the best way to help them achieve these things because:
 
-A blue button should appear to click: _Make Public_,
+- Other tutoring websites are over complicated and produce information overload quickly.
+- This website is easy to navigate.
+- The website gives the client the information they need without overloading them.
+- Guiding them to the goal of the website - to fill out the registration form.
 
-Another blue button should appear to click: _Open Browser_.
+## Client Stories
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- As a parent, I want to see the services available on this platform.
+- As a prospective client I want to see the list of subjects taught on this platform.
+- As a parent, I want to see the available sessions for my child.
+- As a prospective client I want to register on the website.
 
-To log into the Heroku toolbelt CLI:
+## Wireframe Mockups
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- [Homepage](wireframes/index.html.png)
+- [Form](wireframes/Form.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+# Features
 
-### Connecting your Mongo database
+## Existing Features
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+The website consists of two main pages to help potential clients achieve the desired satisfaction:
 
-------
+- ### Home Page (index.html)
+  - Navigation menu for easy access to different sections
+  - Hero image featuring a learning child
+  - Overview section highlighting the tutoring service's value proposition
+  - Subjects section with detailed information about Mathematics and English tutoring offerings
+  - Sessions section displaying available weekday and weekend time slots
+  - Registration button linking to the signup form.
+- ### Registration Page (form.html)
 
-## Release History
+* Comprehensive signup form collecting:
+  - Parent/Guardian details (name, email, phone)
+  - Student information (name, age, key stage)
+  - Form validation for required fields
+  - Custom error messaging for invalid email formats
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- ### Design Features
+  - Responsive design that adapts to different screen sizes
+  - Consistent color scheme with #284a5a as the primary color
 
-**June 18, 2024,** Add Mongo back into template
+# Resources Used
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+- Typography using [Google Fonts](https://fonts.google.com/):
+  - Oswald for main headings
+  - Roboto Condensed for subheadings
+  - IBM Plex Sans for content headings
+  - Lato for body text
+- [Bootstrap 5.3.3](https://getbootstrap.com/) framework for enhanced functionality and styling
+- [Custom CSS](assets/css/style.css) for unique styling elements.
 
-**May 28 2024:** Fix Mongo and Links installs
+# Challenges and errors
 
-**April 26 2024:** Update node version to 16
+- ### Media Query Screen Size Implementation Challenges:
+  The current implementation of media queries presents limitations in handling screen sizes around 896px, which impacts the website's responsive design. When users view the site on devices with screen widths near 896px, such as certain tablets in landscape orientation or smaller laptop displays, they may experience layout inconsistencies.
+- ### Form validation feedback.
+  The current form validation feedback system isn't providing users with clear, timely feedback about their input. This creates a suboptimal user experience where errors might not be immediately apparent or might be displayed inconsistently across different form fields.
 
-**September 20 2023:** Update Python version to 3.9.17.
+# Future improvements
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Online Booking System Enhancement
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+The addition of a booking button and form would streamline the session scheduling process. Currently, users can view available session times but cannot directly schedule them. A comprehensive booking system would include:
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Direct Session Scheduling
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+The booking form would allow parents to select specific time slots they've seen in the sessions section. The form would need to:
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- #### Display real-time availability of tutoring slots
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* Allow selection of subject and academic level
+* Include a calendar interface for date selection
+* Provide immediate confirmation of booking
+* Send automated email confirmations to both parent and tutor
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- #### Integration with Current Registration
+  The booking system would work seamlessly with the existing registration system by:
+  - Automatically populating fields for registered users
+  - Maintaining consistent styling with the current form design
+  - Storing booking history for repeat customers
+  - Allowing modification of existing bookings
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Client Review Implementation
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+The addition of a review carousel would build trust and showcase success stories. This feature would provide social proof through:
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- ### Interactive Review Display
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* A Bootstrap carousel component showing multiple review cards
+* Each card containing a client testimonial, rating, and relevant details
+* Automatic rotation with manual navigation controls
+* Mobile-responsive design matching the website's current aesthetic
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- ### Review Management
+  - A system for collecting and moderating reviews
+  - Display of verified customer badges
+  - Integration of star ratings
+  - Highlighted reviews for specific subjects or grade levels
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Contact Page Development
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+A dedicated contact page would enhance communication channels between the tutoring service and its clients. This would involve:
 
-------
+- ### Direct Communication Features
+  - A comprehensive contact form for general inquiries
+  - Specific sections for feedback about tutoring sessions
+  - Emergency contact information for urgent matters
 
-## FAQ about the uptime script
+# Deployment
 
-**Why have you added this script?**
+## GitHub Pages Deployment
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+1. Navigate to GitHub repository
+2. Click on "Settings" in the repository menu
+3. Scroll down to the "GitHub Pages" section
+4. Under "Source", select "main" branch
+5. Click "Save"
+6. Your site will be published at [MilestoneProject1](https://kc-vic.github.io/MilestoneProject1/)
 
-**How will this affect me?**
+## Local Development to GitHub
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+    To run locally, you can clone this repository directly into the editor of your choice in this case VS Code by pasting git clone https://github.com/Kc-Vic/MilestoneProject1.git into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+# Testing
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Functionality Testing
 
-**So….?**
+1. Navigation Links
+   - Description: Tested all navigation links across both pages
+   - Expected: All links should direct to correct sections/pages
+   - Result: Pass
+   - Test Environment: Chrome browser
+2. Form Validation
+   - Description: Tested required fields and email validation
+   - Expected: Form should not submit with empty required fields or invalid email format
+   - Result: Pass
+   - Notes: Custom error message displays for invalid email format
+3. Social Media Links
+   - Description: Tested all footer social media links
+   - Expected: Links should open in new tab with correct URL
+4. Markup Validation
+   - HTML validation using [W3C](https://validator.w3.org/) returning no errors.
+   - CSS Validation using [W3C](https://jigsaw.w3.org/css-validator/) returning no errors.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Responsiveness Testing
 
-**Can I opt out?**
+1. Mobile Devices (320px - 480px)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+   - Description: Tested layout and functionality on small screens
+   - Expected: Content should stack vertically, text should be readable
+   - Result: Pass
+   - Tested on: iPhone SE, iPhone 12, Google Pixel 5
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+2. Tablets (768px - 1024px)
 
-**Anything more?**
+   - Description: Tested layout and functionality on medium screens
+   - Expected: Two-column layout where appropriate, maintained readability
+   - Result: Pass
+   - Tested on: iPad Air, iPad Mini, Samsung Galaxy Tab
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+3. Desktop (1024px+)
+   - Description: Tested layout and functionality on large screens
+   - Expected: Full layout with optimal spacing and readability
+   - Result: Pass
+   - Tested on: Various monitors (1080p, 1440p, 4K)
 
----
+## Performance Testing
 
-Happy coding!
+1. Load Time
+
+   - Description: Tested page load times across different devices and connections
+   - Expected: Load time under 3 seconds on broadband, under 5 seconds on 3G
+   - Result: Pass
+   - Tool Used: Google Lighthouse
+
+2. Image Optimization
+   - Description: Verified image loading and scaling
+   - Expected: Images should load efficiently and maintain quality across devices
+   - Result: Pass
+   - Notes: Hero image uses aspect-ratio for optimal scaling
+
+# Credits
+
+## Content
+
+- Bootstrap 5.3.3 framework
+- Google Fonts (Oswald, Roboto Condensed, IBM Plex Sans, Lato)
+- Font Awesome icons
+
+## Media
+
+- Hero image: Photo by Julia M Cameron from Pexels: [learningchild.jpg](https://www.pexels.com/photo/girl-in-pink-t-shirt-looking-at-the-imac-4143800/)
+
+# Acknowledgement
+
+- A lot of the guidance for developing the html and css files were from the code institute love running and the Broadwalk games tutorial.
+
+# Disclaimer
+
+The content of this Website is for educational purposes only.
